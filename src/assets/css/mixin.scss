@@ -1,0 +1,6 @@
+@mixin fb ($w,$py:15px,$px:15px){
+  width: $w;
+  max-width: $w;
+  flex-basis: $w;
+  padding: $py $px;
+}

@@ -1,0 +1,39 @@
+.cat{
+  &__title{
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  &__filter {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #e6e9ec;
+    margin-top: 15px;
+    &--title{
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+  }
+  &__row{
+    display: flex;
+    gap: 5px;
+  }
+  &__input{
+    flex: 1;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    border:1px solid #e6e9ec;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    input{
+      margin-left: 5px;
+      flex: 1;
+      width: 100%;
+      border: 0;
+      outline: 0;
+    }
+  }
+}

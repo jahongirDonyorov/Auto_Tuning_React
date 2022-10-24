@@ -1,0 +1,26 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+@import '../../assets/css/var.scss';
+@import '../../assets/css/helper.scss';
+@import '../../assets/css/grid.scss';
+
+body{
+  font-family: 'Manrope', sans-serif;
+  color: $black;
+  font-size: 15px;
+}
+hr{
+  border: 1px solid #e7e7e7;
+  margin: 50px 0px 70px;
+}
+li{
+  list-style: none;
+}
+p{
+  font-size: 16px;
+  line-height: 26px;
+}

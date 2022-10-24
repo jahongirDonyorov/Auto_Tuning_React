@@ -1,0 +1,68 @@
+
+@import './mixin.scss'; 
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.col-30{
+  width: 30%;
+  padding: 15px;
+}
+.col-40{
+  width: 40%;
+  padding: 15px;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i}{
+    @include fb(percentage($i/12));//kelgan qiymatni 12 ga bulib 100 ga kupaytiradi
+  }
+  .m{
+    &b{
+      &-#{$i*10}{margin-bottom: #{$i*10}px;}
+    }
+    &t{
+      &-#{$i*10}{margin-top: #{$i*10}px;}
+    }
+  }
+}
+@media(max-width:1024px){
+  @for $i from 1 through 12 {
+    .col-xl-#{$i}{
+      @include fb(percentage($i/12));//kelgan qiymatni 12 ga bulib 100 ga kupaytiradi
+    }
+  }
+}
+
+@media(max-width:768px){
+  @for $i from 1 through 12 {
+    .col-md-#{$i}{
+      @include fb(percentage($i/12));//kelgan qiymatni 12 ga bulib 100 ga kupaytiradi
+    }
+  }
+}
+
+@media(max-width:600px){
+  @for $i from 1 through 12 {
+    .col-sm-#{$i}{
+      @include fb(percentage($i/12));//kelgan qiymatni 12 ga bulib 100 ga kupaytiradi
+    }
+  }
+}
+
+@media(max-width:375px){
+  @for $i from 1 through 12 {
+    .col-xs-#{$i}{
+      @include fb(percentage($i/12));//kelgan qiymatni 12 ga bulib 100 ga kupaytiradi
+    }
+  }
+}
+.mb-100{
+  margin-bottom: 100px;
+}
+.mb-200{
+  margin-bottom: 200px;
+}

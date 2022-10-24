@@ -1,0 +1,67 @@
+@import '../../../../assets/css/var.scss';
+.card{
+  &__sort{
+    margin-top: 10px;
+    &--content{
+      table{
+        width: 100%;
+        border: 1px solid #e6e9ec;
+        background-color: #f8f8f8;
+        border-collapse: collapse;
+        font-size: 15px ;
+        td,
+        th{
+          padding: 15px 10px;
+          text-align: left;
+          border-bottom: 1px solid #e6e9ec;
+          &.price{
+            font-weight: 700;
+          }
+          &.tdu{
+            text-decoration: underline;
+          }
+          a{
+            border-bottom: 1px solid #333333;
+          }
+        }
+      }
+    }
+    &--nav{
+      display: flex;
+      button{
+        padding: 16px;
+        background-color: $green;
+        &:hover,
+          &.active{
+            background-color: #3f3f3f;
+            color: $green;
+          }
+          &:first-child{
+            border-top-left-radius: 10px;
+          }
+          &:last-child{
+            border-top-right-radius: 10px;
+          }
+        
+      }
+      
+    }
+     &--status{
+       display: flex;
+       align-items: center;
+       &.no {
+         &::before{
+           background-color: $red;
+         }
+       }
+       &::before{
+         content: '';
+         width: 6px;
+         height: 6px;
+         background-color: $green;
+         margin-right: 8px;
+         border-radius: 50%;
+       }
+     }
+  }
+}

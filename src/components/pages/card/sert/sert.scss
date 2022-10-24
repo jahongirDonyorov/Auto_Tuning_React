@@ -1,0 +1,18 @@
+.sert{
+  margin-bottom: 230px;
+  .splide{
+    &__slide{
+      background-color: #f8f8f8;
+      border: 1px solid #e6e9ec;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 22px;
+      img{
+        width: 100%;
+        box-shadow:4px 5px 2px rgba(107,107,107,0.15) ;
+      }
+    }
+  }
+}

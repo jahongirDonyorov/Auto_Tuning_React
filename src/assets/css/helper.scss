@@ -1,0 +1,56 @@
+@import '../../assets/css/var.scss';
+
+.d-flex{
+  display: flex;
+}
+.aligh-items-center{
+  align-items: center;
+}
+.justify-content-between{
+  justify-content: space-between;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.text-center{
+  align-items:right;
+}
+.title{
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 36px;
+  color: $black;
+  margin-bottom: 32px;
+  &.nomb{
+    margin-bottom: 0;
+  }
+  span{
+    color: #8e9499;
+  }
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+  color: $black;
+}
+button{
+  border: 0;
+  background: unset;
+  cursor: pointer;
+}
+ul{
+  list-style-type: none;
+}
+input,
+textarea {
+  border: 1px solid $green;
+  &:focus{
+    outline-color: $green;
+  }
+}
+.full{
+  width: 100%;
+}

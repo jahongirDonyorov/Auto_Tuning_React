@@ -1,0 +1,50 @@
+@import '../../../../assets/css/var.scss';
+
+.catnav{
+  &__link {
+    border: 1px solid $yellow;
+    box-shadow: 0px 2px 0px #c8803e;
+    border-radius: 10px;
+    background-color: $green;
+    display: flex;
+    height: 132px;
+    position: relative;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: flex-end;
+    font-size: 26px;
+    line-height: 30px;
+    padding-right: 90px;
+    &:hover{
+      background-color: darken($green,10%);
+      &>img{
+        transform: scale(1.1);
+      }
+    }
+    &.big{
+      height: 289px ;
+      align-items: start;
+      padding-top: 33px;
+      justify-content: center;
+      padding-right: 0;
+      &>img{
+        bottom:0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transition: 0.5s;
+      }
+    }
+    &>img{
+      position: absolute;
+      bottom: 16px;
+      left: 22px;
+    }
+    span{
+      display: flex;
+      align-items:center;
+      font-weight: 700;  
+     
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.products{
+  margin-bottom: 80px;
+  &__head{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+  }
+  &__more{
+    color: #8e9499;
+    display: flex;
+    align-items:center;
+    img{
+      width: 24px;
+      opacity: 0.6;
+    }
+  }
+}

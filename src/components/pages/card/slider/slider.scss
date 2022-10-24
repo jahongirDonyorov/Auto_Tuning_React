@@ -1,0 +1,44 @@
+.card{
+  &slider{
+    border: 1px solid #e6e9ec;
+    border-radius: 10px;
+    position: relative;
+    &>img{
+      margin:6px 0 0 10px;
+    }
+    .splide__slide{
+      height: 395px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+      }
+    }
+  }
+  &__type{
+    top: 20px;
+    left: 16px;
+    position: absolute;
+    z-index: 1;
+  }
+  &__gift {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #3f3f3f;
+    border-radius: 0px 10px;
+    padding: 7px 14px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 1;
+    img{
+      margin-right: 6px;
+    }
+  }
+}
