@@ -24,7 +24,7 @@ const Category = () => {
 
   const productList = products.map(product => {
     return(
-      <div className="col-4" key={product._id} >
+      <div className="col-4 col-sm-6" key={product._id} >
         <Product product={product}/>
       </div>
     )
@@ -38,7 +38,7 @@ const Category = () => {
         <Breadcrumbs links={bread} />
         <h1 className="cat__title">{category.name}</h1>
         <div className="row">
-          <div className="col-3">
+          <div className="col-3 col-md-12">
             <div className="act__filter">
               <div className="cat__filter--title">Цена</div>
               <div className="cat__row">
@@ -51,7 +51,7 @@ const Category = () => {
               </div>
             </div>
           </div>
-          <div className="col-9">
+          <div className="col-9 col-md-12">
             <div className="row">
               {productList}
             </div>

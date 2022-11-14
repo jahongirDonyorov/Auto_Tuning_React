@@ -31,6 +31,18 @@ import { render } from "@testing-library/react";
             perPage:4,
             autoplay:true,
             gap:30,
+            breakpoints: {
+              768:{
+                perPage:3,
+              },
+              600:{
+                perPage:2,
+                arrows:false,
+              },
+              425:{
+                perPage:1,
+              }
+            }
           }} >
             {productList}
             

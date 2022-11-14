@@ -1,14 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-
+import url from "../../../../helpers/config";
 import './slider.scss'
 
-let Slider = ({imgs = []}) => {
+let  Slider = ({imgs = []}) => {
   const sliders =  imgs.map((img,index)=>{
     if (img){
       return(
         <SplideSlide key={index}>
-                <img src={`http://localhost:3003/${img}`} alt="" />
+                <img src={`${url}/${img}`} alt="" />
         </SplideSlide>
       )
     }

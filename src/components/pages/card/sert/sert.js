@@ -22,6 +22,11 @@ export default class Sert extends Component{
             arrows:false,  
             pagination:false,
             gap:18,
+            breakpoints:{
+              768:{
+                perPage:3,
+              }
+            }
          }} >
           <SplideSlide>
               <img src={require('../../../../assets/img/sert.png')} alt="" />

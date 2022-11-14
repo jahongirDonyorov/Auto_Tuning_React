@@ -4,16 +4,23 @@ import Catnav from "../../components/pages/home/catnav";
 import Partner from "../../components/pages/home/partners";
 import Slider from "../../components/pages/home/slider";
 import Products from "../../components/products";
+import url from '../../helpers/config'
 import './home.scss'
 
 const Home = () => {
 
   const[newProducts, setNewProducts] = useState([])
+  const[topProducts, setTopProducts] = useState([])
 
   useEffect(()=> {
-    axios.get('http://localhost:3003/product/productall')
+    axios.get(`${url}/product/productall`)
     .then(res => {
       if(res.status === 200){setNewProducts(res.data)}
+    })
+
+    axios.get(`${url}/product/top`)
+    .then(res => {
+      if(res.status === 200){setTopProducts(res.data)}
     })
   },[])
     return(
@@ -21,7 +28,7 @@ const Home = () => {
         <Slider/>
         <Catnav/>
         <Products title=' Популярные товары' products={newProducts} />
-        <Products title='Популярные запчасти' />
+        <Products title='Популярные запчасти' products={topProducts} />
         <Products title='Популярные диски' />
         <Partner/>
         <hr/>

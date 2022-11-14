@@ -31,6 +31,8 @@
 .container{
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
 }
 a{
   text-decoration: none;
@@ -53,4 +55,41 @@ textarea {
 }
 .full{
   width: 100%;
+}
+.desktop{
+  display: block;
+}
+.tablet{
+  display: none;
+}
+.mobile{
+  display: none;
+}
+@media(max-width:768px){
+  .desktop{
+    display: none;
+  }
+  .tablet {
+    display: block;
+  }
+  .tablet-1{
+    order: 1;
+  }
+  .tablet-2{
+    order: 2;
+  }
+  .tablet-3{
+    order: 3;
+  }
+  .tablet-4{
+    order: 4;
+  }
+  .tablet-5{
+    order: 5;
+  }
+}
+@media(max-width:600px){
+  .mobeli {
+    display: block;
+  }
 }

@@ -1,4 +1,5 @@
 @import'../../assets/css/var.scss';
+@import'../../assets/css/mixin.scss';
 .footer{
   background-color:#323232;
   padding-top: 50px;
@@ -57,5 +58,20 @@
     &:hover{
       color: $green;
     }
+  }
+}
+@media(max-width:768px){
+  .footer{
+    .container.flex{
+      flex-wrap: wrap;
+    }
+    &__box{
+      @include fb(50%);
+    }
+  }
+}
+@media(max-width:600px){
+  .footer{
+    padding-bottom: 70px;
   }
 }

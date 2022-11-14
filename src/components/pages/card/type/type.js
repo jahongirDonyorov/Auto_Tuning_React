@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default class Type extends Component{
   render() {
     return(
-      <div className="card__sort">
+      <div className="card__sort tablet-3">
         <div className="card__sort--nav">
           <button className="active">R14</button>
           <button>R16</button>

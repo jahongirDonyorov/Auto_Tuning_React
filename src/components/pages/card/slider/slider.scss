@@ -42,3 +42,11 @@
     }
   }
 }
+@media(max-width:768px){
+  .card{
+    &slider {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+}

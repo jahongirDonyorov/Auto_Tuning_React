@@ -28,11 +28,11 @@ import url from '../../../helpers/config'
   const [title,setTitle] = useState('')
   const [list,setList] = useState([])
  
-  const addToggle = () => {
-    //    useState() dagi qiymat keladi va 1 quwiladi
-    // setToggle(toggle + 1)//chiqqan javob togglega boradi va useState(2)bulib tushadi
-    setMenu([...menu, 'Test'])
-  }
+  // const addToggle = () => {
+  //   //    useState() dagi qiymat keladi va 1 quwiladi
+  //   // setToggle(toggle + 1)//chiqqan javob togglega boradi va useState(2)bulib tushadi
+  //   setMenu([...menu, 'Test'])
+  // }
 
   const listMenu = menu.map((item, index)=> {
     return(
@@ -55,10 +55,14 @@ import url from '../../../helpers/config'
          }
        })
      }
+     if(v === ''){
+      setList([])
+    }
   }
   const clear = () => {
     setList([])
     setTitle('')
+    
   }
   const resultSearch = list.map(product => {
     return(
@@ -88,7 +92,7 @@ import url from '../../../helpers/config'
           <ul className="header__menu">
             {listMenu}
           </ul>
-          <div className="header__search">
+          <div className="header__search searchdesk">
             <input type="text" placeholder="Поиск по сайту" onInput={searchProduct} value={title} />
             <button>
             <img src={require('../../../assets/img/icons/Search.png')} alt="" />

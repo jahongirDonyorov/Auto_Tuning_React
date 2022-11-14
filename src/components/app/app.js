@@ -1,5 +1,6 @@
 import React, { Component }  from "react";
 import { BrowserRouter  as Router , Routes, Route} from "react-router-dom";
+import { CookiesProvider } from "react-cookie";
 
 import '@splidejs/react-splide/css';
 import './app.scss'
@@ -19,13 +20,15 @@ export default class App extends Component{
     return(
       <div>
         <Router>
-          <Header/>
-            <Routes>
-              <Route path="/" element={<Home/>}/>
-              <Route path="/product/:id" element={<Card/>}/>
-              <Route path='/category/:id' element={<Category/>}/>
-            </Routes>
-          <Footer/> 
+           <CookiesProvider>
+              <Header/>
+                <Routes>
+                  <Route path="/" element={<Home/>}/>
+                  <Route path="/product/:id" element={<Card/>}/>
+                  <Route path='/category/:id' element={<Category/>}/>
+                </Routes>
+              <Footer/> 
+            </CookiesProvider>
         </Router>
       </div>
     )

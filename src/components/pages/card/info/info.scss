@@ -59,3 +59,40 @@
     }
   }
 }
+@media (max-width:1024px) {
+  .card{
+    &__details{
+       gap: 0 10px;
+      .detail {
+        width: calc(50% - 10px);
+      }
+    }
+  }
+}
+@media(max-width:768px){
+  .card{
+    &__details{
+      margin-top: 30px;
+      background-color: #f8f8f8;
+      border: 1px solid #e6e9ec;
+      border-radius: 10px;
+      overflow: hidden;
+      .detail{
+        width: 100%;
+        padding: 0 10px;
+        b,
+        span{
+          width: 50%;
+        }
+        &--title{
+          padding: 15px;
+          font-size: 20px;
+          font-weight: 700;
+          border-bottom: 1px solid #e6e9ec;
+          width: 100%;
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}

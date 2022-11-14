@@ -22,3 +22,19 @@
     @include fb(percentage(2/12),5px,5px)
   }
 }
+@media(max-width:600px){
+  .partner{
+    &__col{
+      @include fb(20%);
+      padding:5px;
+    }
+  }
+}
+@media(max-width:425px){
+   .partner{
+     &__col {
+       @include fb(25%);
+       padding: 5px;
+     }
+   }
+}

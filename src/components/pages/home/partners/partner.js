@@ -38,9 +38,6 @@ export default class Partner extends Component{
                 <img src={require('../../../../assets/img/partner.png')} alt="" />
               </div>
             </div>
-             
-          </div>
-          <div className="row">
             <div className="partner__col">
               <div className="partner__box">
                 <img src={require('../../../../assets/img/partner.png')} alt="" />
@@ -73,39 +70,7 @@ export default class Partner extends Component{
             </div>
              
           </div>
-          <div className="row">
-            <div className="partner__col">
-              <div className="partner__box">
-                <img src={require('../../../../assets/img/partner.png')} alt="" />
-              </div>
-            </div>
-            <div className="partner__col">
-              <div className="partner__box">
-                <img src={require('../../../../assets/img/partner.png')} alt="" />
-              </div>
-            </div>
-            <div className="partner__col">
-              <div className="partner__box">
-                <img src={require('../../../../assets/img/partner.png')} alt="" />
-              </div>
-            </div>
-            <div className="partner__col">
-              <div className="partner__box">
-                <img src={require('../../../../assets/img/partner.png')} alt="" />
-              </div>
-            </div>
-            <div className="partner__col">
-              <div className="partner__box">
-                <img src={require('../../../../assets/img/partner.png')} alt="" />
-              </div>
-            </div>
-            <div className="partner__col">
-              <div className="partner__box">
-                <img src={require('../../../../assets/img/partner.png')} alt="" />
-              </div>
-            </div>
-             
-          </div>
+      
           
         </div>
       </div>

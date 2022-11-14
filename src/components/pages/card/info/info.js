@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React  from "react";
 import './info.scss'
 
 import snow from '../../../../assets/img/icons/snow.svg'
@@ -7,8 +7,9 @@ import rubl from '../../../../assets/img/icons/ruble.svg'
 const Info = ({title})=>{
     return(
       <>
-      <div className="card__title">{title} </div>
-        <div className="card__details">
+      <div className="card__title "> {title} </div>
+        <div className="card__details  tablet-4">
+          <div className="detail--title tablet">Xarakteresteka</div>
           <div className="detail">
             <b>Производитель:</b>
             <span>Michelin</span>

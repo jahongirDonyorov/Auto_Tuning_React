@@ -141,6 +141,18 @@
    &__count{
      display: flex;
      align-items: center;
+     button{
+       width: 16px;
+       height: 16px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border-radius: 3px;
+       &:hover{
+         background-color: darken($green , 10%);
+         color: #fff;
+       }
+     }
      .val{
        width: 29px;
        height: 29px;
@@ -164,6 +176,23 @@
      font-weight: 500;
      &:hover{
        background-color: darken($green, 10%);
+     }
+   }
+ }
+ @media (max-width:1024px){
+   .product{
+     &__price{
+       flex-direction: column-reverse;
+       align-items: flex-start;
+     }
+     &__box{
+       padding: 15px;
+     }
+     &__cart {
+       display: none;
+     }
+     &__item{
+       height: auto;
      }
    }
  }
