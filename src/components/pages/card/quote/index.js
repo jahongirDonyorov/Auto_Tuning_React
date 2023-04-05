@@ -1,2 +1,2 @@
 import Quote from "./quote";
-export default Quote
+export default Quote;

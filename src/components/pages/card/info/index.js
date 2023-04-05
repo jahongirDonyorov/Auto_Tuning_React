@@ -1,2 +1,2 @@
 import Info from "./info";
-export default Info
+export default Info;

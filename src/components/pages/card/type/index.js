@@ -1,2 +1,2 @@
 import Type from "./type";
-export default Type
+export default Type;

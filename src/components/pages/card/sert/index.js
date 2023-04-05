@@ -1,2 +1,2 @@
-import Sert from "./sert"; 
-export default Sert
+import Sert from "./sert";
+export default Sert;
